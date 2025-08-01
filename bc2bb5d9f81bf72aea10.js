@@ -8,7 +8,6 @@ const weatherContainer = document.querySelector(`.weather-container`);
 
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
-  //   const city = document.getElementById("city-input").value;
   const city = formatCity(document.getElementById("city-input").value);
   document.getElementById("city-input").value = "";
   if (!city) return;
@@ -23,7 +22,7 @@ const formatCity = (city) =>
 async function getWeather(city) {
   if (!city) return;
   const response = await fetch(
-    `http://api.weatherapi.com/v1/current.json?key=5b9478bff10b4dcba4c102131253107&q=${city}`,
+    `https://api.weatherapi.com/v1/current.json?key=5b9478bff10b4dcba4c102131253107&q=${city}`,
     { mode: `cors` }
   );
   if (!response.ok) return;
