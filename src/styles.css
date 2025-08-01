@@ -1,0 +1,61 @@
+html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.output-container {
+  background-color: grey;
+  color: white;
+  font-size: 28px;
+  display: flex;
+  margin: auto;
+  border-radius: 50px;
+  height: 32vh;
+  width: 40%;
+}
+
+.weather-container {
+  background-color: grey;
+  margin: 50px;
+  border-radius: 50px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.location-div {
+  text-align: center;
+}
+
+.result-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+img {
+  height: 100px;
+  aspect-ratio: 1/1;
+}
+
+li {
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
